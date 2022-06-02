@@ -18,9 +18,9 @@ programa
 		para (inteiro c = 0; c <3;c++){
 			escreva(notas[l][c], "|")
 			
-			soma += notas[0][1]
 		
 		}
+		soma += notas[0][1]
 		
 		
 		escreva("\n")
@@ -33,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 366; 
+ * @POSICAO-CURSOR = 350; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
