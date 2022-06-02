@@ -3,29 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-	real notas[3][3] 
-	real soma = 0.0
-	escreva("Digite as nota: \n")
-	para(inteiro l =0; l < 3; l++){
-		para (inteiro c = 0; c < 3;c++){
-			escreva("Notas: ")
-			leia(notas[l][c])
-		}
-		escreva("\n")
-	}
-	
-	para(inteiro l =0; l < 3; l++){
-		para (inteiro c = 0; c <3;c++){
-			escreva(notas[l][c], "|")
+		real pontuacao[5]
+		real maior = 0.0
+		
+		para (inteiro i =0; i<=4; i++ ){
+			escreva("Digite a pontuação: ")
+			leia(pontuacao[i])
+			se(maior < pontuacao[i]){
+				maior = pontuacao[i]
+			}
 			
-		
 		}
-		soma += notas[0][1]
-		
-		
 		escreva("\n")
-	}
-	escreva(soma)
+		para(inteiro i = 0 ; i <=4; i++){
+			
+		escreva(pontuacao[i],"|")
+		}
+
+		escreva("\nSua maior pontuação é: ", maior)
 	} 
 }
 /* $$$ Portugol Studio $$$ 
@@ -33,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 350; 
+ * @POSICAO-CURSOR = 252; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
